@@ -135,8 +135,8 @@ def send_webhook(content, msg_type):
             requests.post(webhook, json=content)
 
 def send_telegram(content, msg_type):
-    token = '6705646472:AAHyvFJMgSg2oqm0rXJTjXSgIv0tqSNRa9w'
-    chat_id = '6456401713'
+    token = 'your_bot_token'
+    chat_id = 'your_chat_id'
     if msg_type == 'url':
         message = f"Google Maps: {content['url']}"
     else:
